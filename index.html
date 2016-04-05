@@ -10,41 +10,68 @@
     <script>
       $(document).ready(function(){
         var mapOptions = {
-          zoom: 18,
-          center: new google.maps.LatLng(40.7293, -73.9906)
+          zoom: 13,
+          center: new google.maps.LatLng(48.8582491,2.3431432)
         };
+
+
         var positions = [
           {
-            'title':'Foundation building',
-            'map': new google.maps.LatLng(40.7291, -73.9906),
-            'link':'http://cooper.edu',
-            'html':'<img src=http://placehold.it/350x150 />'
+            'title':'Apartment 1',
+            'map': new google.maps.LatLng(48.819260, 2.362553),
+            'html':'<img src=apart1.png />',
+            'link' : 'http://www.ikea.com/ms/media/roomsettings/ideas/livingroom/20151_idli02b/20151_idli02b_01_PH119465.jpg'
           },
           {
-            'title':'Cooper Square Park',
-            'map':new google.maps.LatLng(40.72875, -73.9908),
-            'link':'http://cooper.edu'
+            'title':'Apartment 2',
+            'map': new google.maps.LatLng(48.866272, 2.396275),
+            'html':'<img src=apart2.png />',
+            'link' : 'http://st.hzcdn.com/simgs/6b41d6650d826cf5_4-6691/contemporary-living-room.jpg'
           },
           {
-            'title':'Cooper Union New Building',
-            'map': new google.maps.LatLng(40.7287, -73.99025),
-            'link':'http://cooper.edu'
+            'title':'Work',
+            'map': new google.maps.LatLng(48.873259,2.3523398),
+            "link" : "http://www.creperiedesaintmaurice.com/wp-content/uploads/2015/04/biere1.jpg"
           },
           {
-            'title':'Video Games New York',
-            'map': new google.maps.LatLng(40.7278926,-73.99058),
-            'link':'http://www.videogamesnewyork.com/'
+            'title':'Museum',
+            'map': new google.maps.LatLng(48.8606455,2.350051),
+            "link" : "http://www.centrepompidou.fr"
+          },
+          {
+            'title':'Just dont go there',
+            'map': new google.maps.LatLng(48.860206, 2.281014),
+            "link" : "http://memesvault.com/wp-content/uploads/Hahaha-No-Meme-11.png",
+            "html": "<img src=http://vignette3.wikia.nocookie.net/spore/images/6/6c/Question-mark.png/revision/latest?cb=20110427230528 />"
           }
         ];
+
+
+
+
         draw('map', mapOptions, positions);
+
+  // Define the LatLng coordinates for the polygon's path.
+
+
       });
+
+
+
       // google.maps.event.addDomListener(window, 'load', initialize);
     </script>
         <style>
-      #map {
-        height:800px;
-        width:800px;
-      }
+        html, body, #map {
+          height: 100%;
+          margin: 0px;
+          padding: 0px
+        }
+
+        img {
+          height : 15%;
+          width : 15%;
+
+        }
     </style>
   </head>
   <body>
